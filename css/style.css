@@ -368,7 +368,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0s;
 }
 
-.fh5co-home {
+#fh5co-home {
   background-color: transparent;
   background-size: cover;
   background-attachment: fixed;
@@ -378,7 +378,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   overflow: hidden;
 }
-.fh5co-home .gradient {
+#fh5co-home .gradient {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -399,38 +399,38 @@ h1, h2, h3, h4, h5, h6 {
   background-image: repeating-linear-gradient(to bottom right, #3f95ea 0%, #52d3aa 100%);
   background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);*/
 }
-.fh5co-home, .fh5co-home .text-wrap {
+#fh5co-home, #fh5co-home .text-wrap {
   height: 900px;
 }
-.fh5co-home .text-wrap {
+#fh5co-home .text-wrap {
   display: table;
   width: 100%;
   position: relative;
   z-index: 4;
 }
-.fh5co-home .text-inner {
+#fh5co-home .text-inner {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-.fh5co-home .text-inner a {
+#fh5co-home .text-inner a {
   color: white;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.fh5co-home .text-inner a:hover, .fh5co-home .text-inner a:active, .fh5co-home .text-inner a:focus {
+#fh5co-home .text-inner a:hover, #fh5co-home .text-inner a:active, #fh5co-home .text-inner a:focus {
   text-decoration: none;
   color: white;
   border-bottom: 1px dashed white;
 }
-.fh5co-home .text-inner h1 {
+#fh5co-home .text-inner h1 {
   font-size: 50px;
   color: white;
   margin: 0 0 20px 0;
 }
-.fh5co-home .text-inner h2 {
+#fh5co-home .text-inner h2 {
   font-size: 28px;
   line-height: 38px;
   font-weight: 300;
