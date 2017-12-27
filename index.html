@@ -56,7 +56,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- ============LINKS FOR TIMELINE===================================== -->
-	//Links for timeline
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
 	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
 	<!-- //======================================================= -->
@@ -108,7 +107,7 @@
 }
 
 .status {
-  padding: 15px 40px;
+  padding: 20px 40px;
   display: flex;
   justify-content: center;
   border-top: 2px solid #66dc71;
@@ -230,6 +229,17 @@ button {
 		color:red;
 		font-size: 20px;
 	}
+
+	#timeline_heading{
+		text-align: center;
+		font-family: "Titillium Web", sans serif;
+		color: #758D96;
+		display: block;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+	}
 	</style>
 	<!-- End demo purposes only -->
 
@@ -331,8 +341,9 @@ button {
 
 
 <!-- =======================TIMELINE==================== -->
-	<div id="timeline">
 
+	<div id="timeline">
+		<h1 id="timeline_heading">Schedule</h1>
 <ul class="timeline" id="timeline">
   <li class="li complete">
     <div class="timestamp">
