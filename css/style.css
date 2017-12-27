@@ -794,7 +794,7 @@ h1, h2, h3, h4, h5, h6 {
   border-left: none;
   padding: 30px;
   background: #fff;
-  background: #52d3aa;
+  background: linear-gradient(to bottom right, #ee0979, #ff6a00);
   font-size: 20px;
   font-weight: 300;
   position: relative;
