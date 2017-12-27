@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -858,7 +858,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   color: rgba(255, 255, 255, 0.8);
   background: linear-gradient(to bottom right, #ee0979, #ff6a00);
-  
+
 }
 #fh5co-work a {
   color: rgba(255, 255, 255, 0.5);
@@ -1205,7 +1205,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: -20px;
   left: 50%;
-  margin-left: -40px;
+  margin-left: 530px;
   background: #fff;
   z-index: 8;
   width: 80px;

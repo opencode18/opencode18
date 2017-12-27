@@ -1435,6 +1435,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  padding-bottom: 130px;
 }
 
 .img-rounded {
