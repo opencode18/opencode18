@@ -1307,7 +1307,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 .social li a:hover {
-  background: #393e46 !important;
+  background: #393e46 ;
+}
+.socialFoss li a:hover {
+  background: #fff;
 }
 .social.social-box a {
   background: #52d3aa;
