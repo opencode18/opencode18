@@ -55,6 +55,11 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<!-- ============LINKS FOR TIMELINE===================================== -->
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
+	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+	<!-- //======================================================= -->
+
 	<!--
 	Default Theme Style
 	You can change the style.css (default color purple) to one of these styles
@@ -80,6 +85,116 @@
 
 	/* For Demo Purposes Only ( You can delete this anytime :-) */
 
+	/*================================TIMELINE======================================*/
+	.timeline {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.li {
+  transition: all 200ms ease-in;
+}
+
+.timestamp {
+  margin-bottom: 20px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 100;
+}
+
+.status {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #66dc71;
+  position: relative;
+  transition: all 200ms ease-in;
+}
+.status h4 {
+  font-weight: 600;
+	color:#66dc71;
+}
+.status:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #66dc71;
+  border-radius: 25px;
+  border: none;
+  position: absolute;
+  top: -15px;
+  /* left: 42%; */
+  transition: all 200ms ease-in;
+}
+
+.li.complete .status {
+  border-top: 2px solid #66DC71;
+}
+.li.complete .status:before {
+  background-color: #66DC71;
+  border: none;
+  transition: all 200ms ease-in;
+}
+.li.complete .status h4 {
+  color: #66DC71;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 700px) {
+  .timeline {
+    list-style-type: none;
+    display: block;
+  }
+
+  .li {
+    transition: all 200ms ease-in;
+    display: flex;
+    width: inherit;
+  }
+
+  .timestamp {
+    width: 100px;
+  }
+
+  .status:before {
+    left: -8%;
+    top: 30%;
+    transition: all 200ms ease-in;
+  }
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
+  justify-content: center;
+  font-family: "Titillium Web", sans serif;
+  color: #758D96;
+}
+
+button {
+  position: absolute;
+  width: 100px;
+  min-width: 100px;
+  padding: 20px;
+  margin: 20px;
+  font-family: "Titillium Web", sans serif;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+#toggleButton {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  background-color: #75C7F6;
+}
+
+	/* =====================TIMELINE ENDS================== */
 
 	.option-toggle {
 		position: absolute;
@@ -113,6 +228,17 @@
 	.fa-heart{
 		color:red;
 		font-size: 20px;
+	}
+
+	#timeline_heading{
+		text-align: center;
+		font-family: "Titillium Web", sans serif;
+		color: #758D96;
+		display: block;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
 	}
 	</style>
 	<!-- End demo purposes only -->
@@ -218,6 +344,60 @@
 			</div>
 		</div>
 	</section>
+
+
+<!-- =======================TIMELINE==================== -->
+	<div id="timeline">
+
+
+
+		<h1 id="timeline_heading">Schedule</h1>
+
+
+<ul class="timeline" id="timeline">
+
+		  <li class="li complete">
+    <div class="timestamp">
+      <span class="author">Get you ideas rolling</span>
+      <span class="date">01 Jan 2018<span>
+    </div>
+    <div class="status">
+      <h4> Project submissions start </h4>
+    </div>
+		</li>
+  <li class="li complete">
+    <div class="timestamp">
+      <span class="author">Get.Set.Go</span>
+      <span class="date">10 Jan 2018<span>
+    </div>
+    <div class="status">
+      <h4>Event starts</h4>
+    </div>
+  </li>
+
+  <li class="li complete">
+    <div class="timestamp">
+      <span class="author">We are sad to bid you goodbye :) </span>
+      <span class="date">10 Feb 2018<span>
+    </div>
+    <div class="status">
+      <h4> Event Ends </h4>
+    </div>
+  </li>
+  <li class="li complete">
+    <div class="timestamp">
+      <span class="author">You put in the work. Enjoy.</span>
+      <span class="date">13 Feb 2018<span>
+    </div>
+    <div class="status">
+      <h4>Final declaration of winners </h4>
+    </div>
+  </li>
+
+ </ul>
+</div>
+<!-- ============================TIMELINE ENDS======================================== -->
+
 
 	<section id="fh5co-work" data-section="work">
 		<div class="container">
@@ -499,8 +679,7 @@
 
 	
 	<footer id="footer" role="contentinfo">
-		<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
-		<div class="container">
+			<div class="container">
 			<div class="">
 				<div class="col-md-12 text-center">
 					<p>Created with <i class="fa fa-heart" aria-hidden="true"></i> by FOSS</p>
