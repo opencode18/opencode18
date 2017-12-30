@@ -274,6 +274,7 @@ button {
 	.bs-example{
 		margin: 20px;
 		text-align: center;
+		padding-bottom: 55px;
 	}
 	.modal-content iframe{
 			margin: 0 auto;
@@ -283,8 +284,19 @@ button {
 	#remove_box{
 		position: absolute;
 	}
+
+	.z-depth-5 {
+	-webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+					box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+	.modal-body{
+		padding: 0;
+	}
+
+
 	</style>
-	</style>
+
 	<!-- End demo purposes only -->
 
 
@@ -511,7 +523,7 @@ button {
 	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 	                    <h4 class="modal-title">YouTube Video</h4>
 	                </div> -->
-	                <div class="modal-body" id="remove_box">
+	                <div class="modal-body z-depth-5" id="remove_box">
 	                    <iframe id="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/qjVYRDQAl2Q" frameborder="0" allowfullscreen></iframe>
 	                </div>
 	            </div>
