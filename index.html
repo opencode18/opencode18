@@ -271,7 +271,32 @@ button {
 		padding-bottom: 20px;
 	}
 
+	.bs-example{
+		margin: 20px;
+		text-align: center;
+		padding-bottom: 55px;
+	}
+	.modal-content iframe{
+			margin: 0 auto;
+			display: block;
+		}
+
+	#remove_box{
+		position: absolute;
+	}
+
+	.z-depth-5 {
+	-webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+					box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+	.modal-body{
+		padding: 0;
+	}
+
+
 	</style>
+
 	<!-- End demo purposes only -->
 
 
@@ -441,7 +466,7 @@ button {
 		</div>
 	</section>
 
-	<section id="fh5co-intro">
+	<!-- <section id="fh5co-intro">
 		<div class="container">
 			<!-- <div class="row row-bottom-padded-lg">
 				<div class="fh5co-block to-animate" style="background-image: url(images/img_7.jpg);">
@@ -475,13 +500,36 @@ button {
 					</div>
 				</div>
 			</div> -->
-			<div class="row watch-video text-center to-animate">
+			<!-- <div class="row watch-video text-center to-animate">
 				<span>Watch the video</span>
 
 				<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo btn-video"><i class="icon-play2"></i></a>
 			</div>
 		</div>
-	</section>
+	</section> --> 
+
+	<h1 id="timeline_heading">Watch The Trailer!</h1>
+
+
+	<div class="bs-example">
+	    <!-- Button HTML (to Trigger Modal) -->
+	    <a href="#myModal" class="" data-toggle="modal"><i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></i></a>
+
+	    <!-- Modal HTML -->
+	    <div id="myModal" class="modal fade">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <!-- <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                    <h4 class="modal-title">YouTube Video</h4>
+	                </div> -->
+	                <div class="modal-body z-depth-5" id="remove_box">
+	                    <iframe id="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/qjVYRDQAl2Q" frameborder="0" allowfullscreen></iframe>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
 
 
 <!-- =======================TIMELINE==================== -->
@@ -600,14 +648,14 @@ button {
 				<div class="col-md-4">
 					<div class="box-testimony">
 						<blockquote class="to-animate-2">
-							<p>&ldquo;The event is great for beginners and experienced students who want to get started with open source development or looking for a challenging contest in the same field. The best part about this event is the timing. It is placed just a month before GSoC starts.
+							<p>&ldquo;In one month I got to know many things related to development,most of which was in web development.I got to know about the github and git and most importantly the linux command line.
 
-It is a one month long event. It also teaches you to stay active through out the period. I was leading when the event started, but I soon fell back a little 😝.&rdquo;</p>
+Contributing to projects gave me internal happiness as my work was used in the main project and available publicly.It was an experience to remember and I can’t forget it as it gave me a head start into the world of Open-Source contributing.&rdquo;</p>
 						</blockquote>
 						<div class="author to-animate">
-							<figure><img src="vamsisir.jpeg" alt="Vamsi Sangam"></figure>
+							<figure><img src="anupamsir.png" alt="Anupam Dagar"></figure>
 							<p>
-							Vamsi Sangam <a href="https://medium.com/@vamsisangam/opencode-2017-d91ab65dc6e4" target="_blank">Medium.com OpenCode'17</a> <span class="subtext">OpenCode'17 Winner , GSoC'17 with Teammates</span>
+							Anupam Dagar <a href="https://medium.com/@siriusdagar/my-experience-with-opencode-the-mini-gsoc-62666e1c827d" target="_blank">Medium.com OpenCode'17</a><span class="subtext">OpenCode'17 Top Scorer</span>
 							</p>
 						</div>
 
@@ -634,19 +682,22 @@ It is a one month long event. It also teaches you to stay active through out the
 		<div class="col-md-4">
 			<div class="box-testimony">
 				<blockquote class="to-animate-2">
-					<p>&ldquo;The event is great for beginners and experienced students who want to get started with open source development or looking for a challenging contest in the same field. The best part about this event is the timing. It is placed just a month before GSoC starts.
+					<p>&ldquo;I’ve learned a lot after joining opencode. I learnt a lot of java script, CSS and several other languages through GitHub. There are lot of projects in opencode which helps you apply your skills in web development.
 
-It is a one month long event. It also teaches you to stay active through out the period. I was leading when the event started, but I soon fell back a little 😝.&rdquo;</p>
+Before joining the opencode competition I didn’t even know what GitHub was and how useful it is. In fact I didn’t even have a GitHub account !. Opencode was the reason that i joined GitHub.
+
+Opencode is my first step towards opensource development and I’m glad that I’m a part of it.&rdquo;</p>
 				</blockquote>
 				<div class="author to-animate">
-					<figure><img src="vamsisir.jpeg" alt="Vamsi Sangam"></figure>
+					<figure><img src="aswanthsir.png" alt="Aswanth K Anil"></figure>
 					<p>
-					Vamsi Sangam <a href="https://medium.com/@vamsisangam/opencode-2017-d91ab65dc6e4" target="_blank">Medium.com OpenCode'17</a> <span class="subtext">OpenCode'17 Winner , GSoC'17 with Teammates</span>
+					Aswanth K Anil <a href="https://medium.com/@aswanthkanil/opencode-bba684bf68cf" target="_blank">Medium.com OpenCode'17</a><span class="subtext">OpenCode'17 Runner Up</span>
 					</p>
 				</div>
 
 		</div>
 	</div>
+
 
 
 
@@ -823,7 +874,25 @@ It is a one month long event. It also teaches you to stay active through out the
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Google Map -->
 
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    /* Get iframe src attribute value i.e. YouTube video url
+	    and store it in a variable */
+	    var url = $("#cartoonVideo").attr('src');
 
+	    /* Assign empty url value to the iframe src attribute when
+	    modal hide, which stop the video playing */
+	    $("#myModal").on('hide.bs.modal', function(){
+	        $("#cartoonVideo").attr('src', '');
+	    });
+
+	    /* Assign the initially stored url back to the iframe src
+	    attribute when modal is displayed again */
+	    $("#myModal").on('show.bs.modal', function(){
+	        $("#cartoonVideo").attr('src', url);
+	    });
+	});
+	</script>
 	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 	<script src="js/jquery.style.switcher.js"></script>
 	<script>
