@@ -1,42 +1,23 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>OpenCode'18</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
-
-  <!--
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
-
+	<meta name="description" content="Opencode - An Open Source Event" />
+	<meta name="keywords" content="opencode, opensource, coding, github, geekhaven, foss, IIIT, IIIT Allahabad" />
+	<meta name="author" content="FOSS IIITA" />
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
 	<meta property="og:site_name" content=""/>
 	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
+	<!-- <meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+	<meta name="twitter:card" content="" /> -->
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
@@ -54,259 +35,10 @@
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<!-- ============LINKS FOR TIMELINE===================================== -->
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
-	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
-	<!-- //======================================================= -->
-
-	<!--
-	Default Theme Style
-	You can change the style.css (default color purple) to one of these styles
-
-	1. pink.css
-	2. blue.css
-	3. turquoise.css
-	4. orange.css
-	5. lightblue.css
-	6. brown.css
-	7. green.css
-
-	-->
 	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
 	<link rel="stylesheet" id="theme-switch" href="css/style.css">
-	<!-- End demo purposes only -->
-
-
-	<style>
-	/* For demo purpose only */
-
-	/* For Demo Purposes Only ( You can delete this anytime :-) */
-
-	/*================================TIMELINE======================================*/
-	.timeline {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.li {
-  transition: all 200ms ease-in;
-}
-
-.timestamp {
-  margin-bottom: 20px;
-  padding: 0px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 100;
-}
-
-.status {
-  padding: 20px 40px;
-  display: flex;
-  justify-content: center;
-  border-top: 2px solid #66dc71;
-  position: relative;
-  transition: all 200ms ease-in;
-}
-.status h4 {
-  font-weight: 600;
-	color:#66dc71;
-}
-.status:before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  background-color: #66dc71;
-  border-radius: 25px;
-  border: none;
-  position: absolute;
-  top: -15px;
-  /* left: 42%; */
-  transition: all 200ms ease-in;
-}
-
-.li.complete .status {
-  border-top: 2px solid #66DC71;
-}
-.li.complete .status:before {
-  background-color: #66DC71;
-  border: none;
-  transition: all 200ms ease-in;
-}
-.li.complete .status h4 {
-  color: #66DC71;
-}
-
-@media (min-device-width: 320px) and (max-device-width: 700px) {
-  .timeline {
-    list-style-type: none;
-    display: block;
-  }
-
-  .li {
-    transition: all 200ms ease-in;
-    display: flex;
-    width: inherit;
-  }
-
-  .timestamp {
-    width: 100px;
-  }
-
-  .status:before {
-    left: -8%;
-    top: 30%;
-    transition: all 200ms ease-in;
-  }
-}
-html, body {
-  width: 100%;
-  height: 100%;
-  /* display: flex; */
-  justify-content: center;
-  font-family: "Titillium Web", sans serif;
-  color: #758D96;
-}
-
-button {
-  position: absolute;
-  width: 100px;
-  min-width: 100px;
-  padding: 20px;
-  margin: 20px;
-  font-family: "Titillium Web", sans serif;
-  border: none;
-  color: white;
-  font-size: 16px;
-  text-align: center;
-}
-
-#toggleButton {
-  position: absolute;
-  left: 50px;
-  top: 20px;
-  background-color: #75C7F6;
-}
-
-	/* =====================TIMELINE ENDS================== */
-
-	.option-toggle {
-		position: absolute;
-		right: 0;
-		top: 0;
-		margin-top: 5px;
-		margin-right: -30px;
-		width: 30px;
-		height: 30px;
-		background: #f64662;
-		text-align: center;
-		border-top-right-radius: 4px;
-		border-bottom-right-radius: 4px;
-		color: #fff;
-		cursor: pointer;
-		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-	}
-	.option-toggle i {
-		top: 2px;
-		position: relative;
-	}
-	.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
-		color:  #fff;
-		text-decoration: none;
-		outline: none;
-	}
-
-	.fa-heart{
-		color:red;
-		font-size: 20px;
-	}
-
-	#timeline_heading{
-		text-align: center;
-		font-family: "Titillium Web", sans serif;
-		color: #758D96;
-		display: block;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: bold;
-	}
-
-	.box_it{
-		border:2px solid #f2f2f2;
-		padding: 10px 20px;
-	}
-
-	#rules_upper_row{
-		padding-bottom: 30px;
-	}
-
-	.rules_heading{
-		text-transform: uppercase;
-		text-align: center;
-	}
-
-	.contact_head{
-		margin:20px 30px 10px 0;
-	}
-
-	.rem_disk{
-		list-style: none;
-	}
-
-	.contact_icon{
-		padding-right: 10px;
-	}
-
-	#push_down{
-		padding-bottom: 20px;
-	}
-
-	.bs-example{
-		margin: 20px;
-		text-align: center;
-		padding-bottom: 55px;
-	}
-	.modal-content iframe{
-			margin: 0 auto;
-			display: block;
-		}
-
-	#remove_box{
-		position: absolute;
-	}
-
-	.z-depth-5 {
-	-webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-					box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-}
-
-	.modal-body{
-		padding: 0;
-	}
-
-
-	</style>
-
-	<!-- End demo purposes only -->
-
-
-	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
 	</head>
 	<body>
 	<header role="banner" id="fh5co-header">
@@ -332,26 +64,32 @@ button {
 		  </div>
 	</header>
 
-	<section id="fh5co-home" data-section="home" style="background-image: url(images/1.jpeg);height: 101.5vh;" data-stellar-background-ratio="0.5">
+	<section id="fh5co-home" data-section="home" style="background-image: url(images/1.jpeg);height: auto;" data-stellar-background-ratio="0.5">
 		<div class="gradient" id="particles-js"></div>
 		<div class="container">
 			<div class="text-wrap">
 				<div class="text-inner">
 					<div class="row">
-						<div class="col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-6 col-xs-offset-3" style="padding-bottom: 50px;">
+						<div class="col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-6 col-xs-offset-3" style="padding-bottom: 4.43vh;">
 							<img src="images/GitHub.png" class="img-responsive" >
 							<h2 class="to-animate">Presents</h2>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
-							<img src="images/SVG.svg" class="img-responsive" style="padding-bottom: 0px;">
+							<img src="images/SVG.svg" class="img-responsive">
 						</div>
-					</div><br><br>
+					</div><br>
 					<div class="row">
-						<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-							<h2 class="to-animate" style="padding-bottom: 350px;">OpenCode'18</h2>
-						</div>
+							<h2 class="to-animate">Register in OpenCode'18 as a</h2><br>
+							<div class="row">
+								<div class="col-md-2 col-md-offset-4 col-sm-4 col-sm-offset-2 col-xs-5 col-xs-offset-1">
+							<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdoIoX_XSwrQ1V3zK_CD05VPrsgBEl63dmSQFTyK4P2wGaCNg/viewform?usp=sf_link" class="btn btn-primary to-animate" style="font-size: 1.77vh;background: none;border: 2px solid #f73e36 !important;">Participant</a>
+								</div> 
+								<div class="col-md-1 col-sm-1 col-xs-1">
+							<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSel6--FZDgpUv62GHzCPcMD7zcg2R8IIdKUzwjxwAavYh-Vbg/viewform?usp=sf_link" class="btn btn-primary to-animate" style="font-size: 1.77vh;min-width: 21.4vh;background: none;border: 2px solid #f73e36 !important;"">Mentor</a>
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -518,12 +256,12 @@ button {
 	    <!-- Modal HTML -->
 	    <div id="myModal" class="modal fade">
 	        <div class="modal-dialog">
-	            <div class="modal-content">
+	            <div class="modal-content embed-responsive embed-responsive-16by9">
 	                <!-- <div class="modal-header">
 	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 	                    <h4 class="modal-title">YouTube Video</h4>
 	                </div> -->
-	                <div class="modal-body z-depth-5" id="remove_box">
+	                <div class="modal-body z-depth-5 embed-responsive-item" id="remove_box">
 	                    <iframe id="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/qjVYRDQAl2Q" frameborder="0" allowfullscreen></iframe>
 	                </div>
 	            </div>
@@ -531,13 +269,13 @@ button {
 	    </div>
 	</div>
 
+		<h1 id="timeline_heading">Schedule</h1>
 
 <!-- =======================TIMELINE==================== -->
-	<div id="timeline">
+	<!-- <div id="timeline">
 
 
 
-		<h1 id="timeline_heading">Schedule</h1>
 
 
 <ul class="timeline" id="timeline">
@@ -581,6 +319,30 @@ button {
   </li>
 
  </ul>
+</div> -->
+<div class="container">
+	<ul class="timeline">
+    <li class="timeline-milestone no-flicker is-completed timeline-start one">
+      <div class="timeline-action">
+        <h2 class="title">Project submissions start</h2>
+      </div>
+    </li>
+    <li class="timeline-milestone no-flicker is-completed timeline-start two">
+      <div class="timeline-action">
+        <h2 class="title">Event starts</h2>
+      </div>
+    </li> 
+<li class="timeline-milestone no-flicker is-completed timeline-start three">
+      <div class="timeline-action">
+        <h2 class="title">Event Ends plus final blog writing.</h2>
+      </div>
+    </li> 
+    <li class="timeline-milestone no-flicker is-completed timeline-start timeline-last four">
+      <div class="timeline-action">
+        <h2 class="title">Final declaration of winners</h2>
+      </div>
+    </li>   
+  </ul>
 </div>
 <!-- ============================TIMELINE ENDS======================================== -->
 
@@ -653,7 +415,7 @@ button {
 Contributing to projects gave me internal happiness as my work was used in the main project and available publicly.It was an experience to remember and I can’t forget it as it gave me a head start into the world of Open-Source contributing.&rdquo;</p>
 						</blockquote>
 						<div class="author to-animate">
-							<figure><img src="anupamsir.png" alt="Anupam Dagar"></figure>
+							<figure><img src="images/anupam.png" alt="Anupam Dagar"></figure>
 							<p>
 							Anupam Dagar <a href="https://medium.com/@siriusdagar/my-experience-with-opencode-the-mini-gsoc-62666e1c827d" target="_blank">Medium.com OpenCode'17</a><span class="subtext">OpenCode'17 Top Scorer</span>
 							</p>
@@ -670,7 +432,7 @@ Contributing to projects gave me internal happiness as my work was used in the m
 It is a one month long event. It also teaches you to stay active through out the period. I was leading when the event started, but I soon fell back a little 😝.&rdquo;</p>
 					</blockquote>
 					<div class="author to-animate">
-						<figure><img src="vamsisir.jpeg" alt="Vamsi Sangam"></figure>
+						<figure><img src="images/vamsi.jpeg" alt="Vamsi Sangam"></figure>
 						<p>
 						Vamsi Sangam <a href="https://medium.com/@vamsisangam/opencode-2017-d91ab65dc6e4" target="_blank">Medium.com OpenCode'17</a> <span class="subtext">OpenCode'17 Winner , GSoC'17 with Teammates</span>
 						</p>
@@ -682,14 +444,14 @@ It is a one month long event. It also teaches you to stay active through out the
 		<div class="col-md-4">
 			<div class="box-testimony">
 				<blockquote class="to-animate-2">
-					<p>&ldquo;I’ve learned a lot after joining opencode. I learnt a lot of java script, CSS and several other languages through GitHub. There are lot of projects in opencode which helps you apply your skills in web development.
+					<p>&ldquo;I’ve learned a lot after joining opencode.There are lot of projects in opencode which helps you apply your skills in web development.
 
-Before joining the opencode competition I didn’t even know what GitHub was and how useful it is. In fact I didn’t even have a GitHub account !. Opencode was the reason that i joined GitHub.
+Before joining the opencode competition I didn’t even know what GitHub was and how useful it is. In fact I didn’t even have a GitHub account!. Opencode was the reason that i joined GitHub.
 
 Opencode is my first step towards opensource development and I’m glad that I’m a part of it.&rdquo;</p>
 				</blockquote>
 				<div class="author to-animate">
-					<figure><img src="aswanthsir.png" alt="Aswanth K Anil"></figure>
+					<figure><img src="images/aswanth.png" alt="Aswanth K Anil"></figure>
 					<p>
 					Aswanth K Anil <a href="https://medium.com/@aswanthkanil/opencode-bba684bf68cf" target="_blank">Medium.com OpenCode'17</a><span class="subtext">OpenCode'17 Runner Up</span>
 					</p>
@@ -939,5 +701,21 @@ Opencode is my first step towards opensource development and I’m glad that I�
 });
   }(jQuery));
 	</script>
+	<script type="text/javascript">
+$(document).ready(function(){
+    function alignModal(){
+        var modalDialog = $(this).find(".modal-dialog");
+        /* Applying the top margin on modal dialog to align it vertically center */
+        modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
+    }
+    // Align modal when it is displayed
+    $(".modal").on("shown.bs.modal", alignModal);
+    
+    // Align modal when user resize the window
+    $(window).on("resize", function(){
+        $(".modal:visible").each(alignModal);
+    });   
+});
+</script>
 	</body>
 </html>
