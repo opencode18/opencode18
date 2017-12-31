@@ -1544,13 +1544,14 @@ h1, h2, h3, h4, h5, h6 {
   float: right;
   
 }
- .socialFoss  #foss {
-  width : 50px;
-  height : 30px;
+  #foss {
+  margin-top: 1vh; 
+  width : 20vh;
+  height : 8vh;
 }
-.socialFoss  #iiita {
-  width : 50px!important;
-  height : 50px!important;
+ #iiita {
+  width : 10vh !important;
+  height : 10vh!important;
 }
 .social li {
   list-style: none;
